@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Basic for loop example</title>
+    <style>
+    </style>
+  </head>
+  <body>
+  <p></p>
+    <script>
+    var cats = ['bill', 'jeff', 'pete', 'biggles', 'jasmin'];
+// boucles pour mettres en majuscules les noms du tableaux 'chat' //
+    for(let i= 0; i < cats.length; i++) {
+        // console.log("cats[i] avec i=", i)
+        // console.log(cats[i])
+        // console.log(cats[i].charAt(0))
+        // console.log(cats[i].slice(1))
+        cats[i] = cats[i].charAt(0).toUpperCase() + cats[i].slice(1);
+    };
+
+    let info = 'My cats are called ';
+    let para = document.querySelector('p');
+// boucles qui va ajouter a info les noms des chats qui font exactement 4 lettres //
+    cats.forEach(cat => {
+      if (cat.length > 4) { //Condition qui teste si le chat a un prenom qui fait 4 letres //
+        info += cat + ' /';
+      }
+    });
+
+    para.textContent = info;
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
