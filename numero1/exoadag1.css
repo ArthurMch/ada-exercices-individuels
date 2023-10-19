@@ -1,0 +1,65 @@
+/* Style du corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c8ebe;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style du titre */
+  h1 {
+    color: #333;
+  }
+  
+  /* Style des blocs haut et bas */
+  #block_left, #block_right {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff82;
+    border: 5px solid #c91919;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px auto; /* Utilisez "auto" pour centrer horizontalement */
+}
+  
+  /* Style des boutons */
+  button {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #005d91;
+  }
+  
+  /* Style des zones de texte */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style des messages */
+  #message, #win_msg {
+    font-weight: bold;
+    color: #f00;
+  }
+  
+  /* Style du titre du joueur */
+  h2 {
+    font-size: 24px;
+  }
+  
+  /* Style du message gagnant */
+  #win_msg {
+    color: green;
+  }
+  

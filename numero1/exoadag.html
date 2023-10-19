@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="exoadag1.css">
+    
+    
+    <title>exo ada premier</title>
+</head>
+
+<body>
+    <h1>MULTIPLAYER</h1><br>
+
+<div id="block_left">
+    <h2>PLAYER ONE</h2>
+        <label for="choose">choose a number to be guessed: </label><br>
+        <input type="text" id="choose" name="choose" placeholder="taper un chiffre de 0 à 100">
+        <button id="button_1">submit</button> 
+</div>
+<br>
+<br>
+<br>
+<div id="block_right">
+    <h2>PLAYER TWO</h2>
+        <label for="guess">Guess the number: </label><br>
+        <input type="text" id="guess" name="guess" placeholder="taper un chiffre de 0 à 100">
+        <button id="button_2">sumbit</button>   
+        <p id="message">  > </p>  
+    
+
+
+<h1 id="win_msg"></h1>
+</div>
+
+<script>
+var numberP1 = null;
+var numberP2 = null;
+document.getElementById("button_1").addEventListener("click", number_P1);
+ // addEventListener declanche au moment du clik 
+document.getElementById("button_2").addEventListener("click", Guess);
+function number_P1() {
+   numberP1 = parseInt(document.getElementById("choose").value);
+   console.log(numberP1);
+}
+function Guess() {
+   numberP2 = parseInt(document.getElementById("guess").value); // je recupere la valeur du promp et je la change en integer  (nombre) avec parsInt
+   var afficher_msg = document.getElementById("message");
+
+   while (numberP1 !== numberP2) { // tan que la (condition) alors la boucle tourne 
+       if (numberP1 > numberP2) {
+           afficher_msg.innerText = "The number to guess is higher!";
+       } else if (numberP1 < numberP2) {
+           afficher_msg.innerText = "The number to guess is lower!";
+       }
+       return; // Utilisez "return" pour sortir de la boucle
+   } 
+   document.getElementById("win_msg").innerText = "Congratulations, you won !";
+}
+</script>
+</body>
+</html>
