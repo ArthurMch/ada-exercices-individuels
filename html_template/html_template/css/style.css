@@ -1,0 +1,40 @@
+/* Style du titre h1 */
+/* Style du titre h1 */
+h1 {
+    color: #e94832; /* Couleur du texte */
+    background-color: #f8d9d1; /* Couleur de l'arrière-plan */
+    text-align: center; /* Centre le texte */
+    border: 2px solid black; /* Bordure de 2 pixels */
+    padding: 10px; /* Espace intérieur de 10 pixels */
+    animation: bounce 1s infinite alternate; /* Animation de rebond */
+}
+
+/* Animation de rebond */
+@keyframes bounce {
+    from {
+        transform: translateY(0); /* Position initiale */
+    }
+    to {
+        transform: translateY(-10px); /* Position de rebond */
+    }
+}
+
+
+/* Style des titres h2 et h3 */
+h2, h3 {
+    text-align: center; /* Centre le texte */
+}
+
+/* Style de l'arrière-plan de la page */
+body {
+    background-color: #f2f2f2; /* Couleur de fond de la page */
+}
+
+/* Style des messages d'accueil et d'âge */
+#print_name, #print_age {
+    text-align: center; /* Centre le texte */
+    padding: 10px; /* Espace intérieur de 10 pixels */
+    background-color: #fff; /* Couleur de fond des boîtes de texte */
+    border: 1px solid #ccc; /* Bordure légère */
+    margin: 10px; /* Marge extérieure de 10 pixels */
+}
